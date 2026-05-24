@@ -45,7 +45,7 @@ export function Hero() {
         <div>
           <p className="hero-tail mb-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.3em] text-bronze">
             <span className="h-px w-10 bg-bronze" />
-            Eine kleine Demo , Mark für Wischmann
+            Eine kleine Demo , von Mark für Marc
           </p>
 
           <h1 className="text-5xl font-bold leading-[1.05] text-cream sm:text-6xl">

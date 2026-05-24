@@ -4,8 +4,8 @@ import { gsap } from '../lib/gsap'
 
 // Closer block: same treatment offered for the rest of the sortiment. Cards
 // use Higgsfield-generated synthetic-splat scenes in the same visual language
-// as the floor splats. flex h-full + gradient inside image div guarantees
-// all three cards align vertically regardless of body text length.
+// as the floor splats. Image and body sit cleanly stacked, no negative-margin
+// overlap that clips title text.
 const categories = [
   {
     id: 'sichtschutz',
@@ -91,9 +91,9 @@ export function Closer() {
                 className="block h-full w-full object-cover opacity-90 transition-all duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
                 loading="lazy"
               />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink-soft via-ink-soft/85 to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink-soft to-transparent" />
             </div>
-            <div className="-mt-12 flex flex-1 flex-col px-7 pb-7">
+            <div className="flex flex-1 flex-col p-7">
               <p className="text-[0.7rem] font-bold uppercase tracking-[0.3em] text-bronze">
                 Vergleichsraum-Idee
               </p>
@@ -106,24 +106,19 @@ export function Closer() {
         ))}
       </div>
 
-      <div className="relative mt-14 flex flex-col items-start gap-5 rounded-3xl border border-bronze/20 bg-ink-soft p-8 sm:flex-row sm:items-center sm:justify-between sm:p-10">
-        <div>
-          <p className="text-[0.7rem] font-bold uppercase tracking-[0.3em] text-bronze">
-            Nächster Schritt
-          </p>
-          <p className="mt-2 text-xl font-semibold leading-snug text-cream sm:text-2xl">
-            15-Min-Call mit Kaffee, du zeigst mir euer Sortiment,
-            <br className="hidden sm:block" />
-            ich sag dir, wo's am meisten Sinn macht anzufangen.
-          </p>
-        </div>
-        <a
-          href="#kontakt"
-          className="inline-flex shrink-0 items-center gap-2 rounded-full bg-bronze px-7 py-3 font-semibold text-ink shadow-lg shadow-bronze/20 transition-transform hover:-translate-y-0.5"
-        >
-          Termin abstimmen
-          <span aria-hidden="true">→</span>
-        </a>
+      <div className="relative mt-14 overflow-hidden rounded-3xl border border-bronze/25 bg-ink-soft p-8 sm:p-10">
+        <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-bronze/15 blur-[100px]" />
+        <p className="relative text-[0.7rem] font-bold uppercase tracking-[0.3em] text-bronze">
+          Nächster Schritt
+        </p>
+        <p className="relative mt-3 max-w-3xl text-xl font-semibold leading-relaxed text-cream sm:text-2xl">
+          Falls du Bock hast, sag einfach Bescheid. Ich bau dir einen Showroom
+          ohnegleichen, einen ohne Konkurrenz, setze deine Marke auf eine neue
+          Empore und liefere dir Marketing-Material von übermorgen. Wenn wir
+          reden, reden wir persönlich , kein Call, kein Kalender-Pingpong. Sag
+          mir was du willst, und ich bau dir etwas, von dem du dir nicht
+          hättest träumen lassen können.
+        </p>
       </div>
     </section>
   )
