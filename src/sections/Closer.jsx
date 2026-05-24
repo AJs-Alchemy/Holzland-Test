@@ -114,10 +114,7 @@ export function Closer() {
         <p className="relative mt-3 max-w-3xl text-xl font-semibold leading-relaxed text-cream sm:text-2xl">
           Falls du Bock hast, sag einfach Bescheid. Ich bau dir einen Showroom
           ohnegleichen, einen ohne Konkurrenz, setze deine Marke auf eine neue
-          Empore und liefere dir Marketing-Material von übermorgen. Wenn wir
-          reden, reden wir persönlich , kein Call, kein Kalender-Pingpong. Sag
-          mir was du willst, und ich bau dir etwas, von dem du dir nicht
-          hättest träumen lassen können.
+          Empore und liefere dir Marketing-Material von übermorgen.
         </p>
       </div>
     </section>
