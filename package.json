@@ -1,0 +1,32 @@
+{
+  "name": "ae-reality-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Modus B: komplette Creative-Frontend-Projekt-Webseite (React + Tailwind + R3F + GSAP).",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@sparkjsdev/spark": "^2.1.0",
+    "clsx": "^2.1.1",
+    "gsap": "^3.15.0",
+    "leva": "^0.10.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-responsive": "^10.0.1",
+    "three": "^0.184.0",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@vitejs/plugin-react": "^6.0.2",
+    "tailwindcss": "^4.3.0",
+    "vite": "^8.0.14"
+  }
+}
